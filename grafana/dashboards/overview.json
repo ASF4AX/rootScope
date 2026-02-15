@@ -172,8 +172,16 @@
       },
       "targets": [
         {
+          "bucketAggs": [],
+          "metrics": [
+            {
+              "id": "1",
+              "type": "logs"
+            }
+          ],
           "query": "level:(ERROR OR WARN OR INFO)",
-          "refId": "A"
+          "refId": "A",
+          "timeField": "@timestamp"
         }
       ],
       "title": "Recent Logs",
