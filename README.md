@@ -33,6 +33,13 @@ Optional:
 ES_HEAP_SIZE=512m
 ```
 
+If Grafana is behind a reverse proxy subpath (for example `/grafana`), also set:
+
+```dotenv
+GRAFANA_ROOT_URL=https://<host>/grafana/
+GRAFANA_SERVE_FROM_SUB_PATH=true
+```
+
 ## Run and Verify
 1. Start services.
 
